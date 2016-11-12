@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		h1 {
+			color: blue;
+		}
+		h2 {
+			color: green;
+		}
+		h3 {
+			color: red;
+		}
+		p {
+		font-size: 15px;
+		}
+		img {
+		margin: 20px;
+		}
+		img {
+		height: 20%;
+		width: 20%;
+		}
+		body {
+		font-family: Helvetica, "Trebuchet MS", sans-serif;
+		}
+		</style>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"> </script>
+
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div class="jumbotron">
+					<h1>Hello, there!</h1>
+					<p class="lead">This is Humanidade Brasil, an organization dedicated to help Humanity.
+					</p>
+					<p>
+						<a class="btn btn-lg btn-success" href="#"
+						role="button">Learn More</a>
+					</p>
+				</div>
+			</div>
+		</header>
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" datatoggle="
+				collapse" data-target="#navbar" aria-expanded="false" ariacontrols="
+				navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Home</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Who we are</a></li>
+					<li><a href="#What we do">What we do</a></li>
+					<li><a href="#Find a NGO">Find a NGO</a></li>
+					<li><a href="#Donate">Donate</a></li>
+					<li><a href="#I am a NGO">I am a NGO</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+
+		<span style="color:green"> <h1>Welcome to <em> Humanidade Brasil!</em></h1> 
+		</span>
+		<h2>Have you ever find the need to donate and couldn't find a nice place to do so?</h2>
+		<h3>Here is the solution!!</h3>
+		<p>HumanidadeBrasil is a <strong>great online plataform</strong> to help you donate in quick and easy way!
+		<br> First, start choosing from the many NGO locate in Brazil:
+		<br> <a href="http://www.ongsbrasil.com.br/" target="_blank"> 
+			Click here to open all Brazilian non-profits in a new tab and start your search for NGOs
+		</a>
+		</p>
+		<p>You will find a variety of sectors that you can pick and choose to allocate your donation!
+		<div>
+			<ul style="list-style-type:square">
+			<li>Education</li>
+			<li>Healthcare</li>
+			<li>Microfinance</li>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">I am column 1.</div>
+				<div class="col-md-4">I am column 2.</div>
+				<div class="col-md-4">I am column 3.</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">I am a larger column.</div>
+			<div class="col-md-2">I am a smaller column.</div>
+			<div class="col-md-2">I am a smaller column.</div>
+		</div>
+		</div>
+		<h3>Product Features</h3> 
+		Our product has <span style="color:blue"> <strong> state-of-theart </strong>
+		</span> features.
+		</div>
+		</a>
+		<img src="bears.jpg"> But wait! Don't leave before learning more about the industry!
+		<br> Please click in the <strong>cute bear </strong> to find out more
+		<a href="http://exame.abril.com.br/brasil/brasil-tem-4-das-100-ongs-mais-relevantes-do-mundo/" target="_blank"> <img src="C:\Users\Lais\Desktop\Web Development Course\bear.jpg">
+		</a>
+
+		<script>
+			alert("Please subscripe your email do get more information about Humanidade Brasil.");
+		</script>
+
+		Your can get a discount
+		<p id="test"></p>
+		<button type="button" onclick= "document.getElementById('test').innerHTML='Your code is 2839'">
+			Click here to redeem your passcode
+		</button>
+
+		<p id="prettyParagraph"> Verify: I am not a robot</p>
+		<button type="button" onclick="applyStyling()">Verify!</button>
+		<script>
+			function applyStyling() {
+				var paragraph = document.getElementById("prettyParagraph");
+				paragraph.style.color = "green";
+				paragraph.style.fontSize = "29px";
+				paragraph.style.fontWeight = "700";
+			}
+		</script>
+
+		<br><input id="numericInput" type="number">
+		<p id="result"></p>
+		<button type="button" onclick="testInput()">Test Input</button>
+		<script>
+			function testInput() {
+				// Create variable to store test result
+				var text;
+				// Get the value of the input field with id="numb"
+				var x = document.getElementById("numericInput").value;
+				if (isNaN(x) || x < 0 || x > 99) {
+				text = "Wrong input";
+				} else {
+				text = "Correct input";
+				}
+				// Display result
+				document.getElementById("result").innerHTML = text;
+				}
+		</script>
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+				Please subscribe your email
+				</div>
+				<div class="item">
+				Your Donation WILL make a difference
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#myCarousel").carousel({interval: 2000});
+			});
+		</script>
+
+	</body>
+</html>
